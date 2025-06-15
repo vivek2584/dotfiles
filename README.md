@@ -13,6 +13,7 @@
 - nvim plugins :-
     - theme : catppuccin
     - default config : NvChad
+    - LSP : rust-analyzer
     - rust.vim
     - rustacean.nvim
     - crates.nvim
