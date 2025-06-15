@@ -10,3 +10,9 @@
     - zsh-autocompletions
     - zsh-syntax-highlighting
     - zoxide
+- nvim plugins :-
+    - theme : catppuccin
+    - default config : NvChad
+    - rust.vim
+    - rustacean.nvim
+    - crates.nvim
