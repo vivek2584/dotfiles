@@ -15,5 +15,5 @@
     - default config : NvChad
     - LSP : rust-analyzer
     - rust.vim
-    - rustacean.nvim
+    - rustaceanvim
     - crates.nvim
