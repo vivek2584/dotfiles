@@ -1,4 +1,4 @@
-# dotfiles backup incase my arch breaks for the n'th time
+# WSL config
 
 - font : CaskaydiaMono Nerd Font Mono
 - terminal setup : alacritty with tmux
