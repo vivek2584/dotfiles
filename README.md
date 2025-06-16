@@ -11,7 +11,7 @@
     - zsh-syntax-highlighting
     - zoxide
 - nvim plugins :-
-    - theme : catppuccin
+    - theme : everforest
     - default config : NvChad
     - LSP : rust-analyzer
     - rust.vim
