@@ -25,6 +25,36 @@ return {
   },
 
   {
+  'nvimdev/lspsaga.nvim',
+  event = "LspAttach",
+  config = function()
+    require('lspsaga').setup({
+      lightbulb = {
+        enable = false, -- 🚫 disable lightbulb
+      },
+      hover = {
+        max_width = 0.9,
+
+        max_height = 0.8,
+        open_link = 'gx',
+        open_cmd = '!wslview', -- or 'xdg-open' on Linux
+
+      },
+      ui = {
+        border = 'rounded',
+        winblend = 10,
+        title = true,
+      },
+    })
+   vim.api.nvim_set_hl(0, "HoverBorder", { fg = "#e5e5e5" })  -- light gray
+  end,
+  dependencies = {
+    'nvim-treesitter/nvim-treesitter', -- required for markdown
+    'nvim-tree/nvim-web-devicons',     -- optional
+  },
+},
+
+  {
     'rust-lang/rust.vim',
     ft = "rust",
     init = function ()
