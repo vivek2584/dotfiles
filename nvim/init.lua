@@ -34,3 +34,13 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.api.nvim_create_autocmd("User", {
+
+  pattern = "VeryLazy",
+  callback = function()
+    vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#f5f5f5", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+  end,
+
+})
