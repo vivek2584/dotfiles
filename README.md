@@ -14,6 +14,7 @@
     - theme : everforest
     - default config : NvChad
     - LSP : rust-analyzer
+    - lspsaga.nvim
     - rust.vim
     - rustaceanvim
     - crates.nvim
