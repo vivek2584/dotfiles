@@ -90,6 +90,31 @@ return {
       })
     end
   },
+
+  {
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html", -- if you have `nvim-treesitter` installed
+    cmd = "Leet",
+
+    dependencies = {
+        -- include a picker of your choice, see picker section for more details
+        "nvim-telescope/telescope.nvim",
+        "nvim-lua/plenary.nvim",
+        "MunifTanjim/nui.nvim",
+    },
+    opts = {
+        -- configuration goes here
+        lang = "rust",
+        standalone = true,
+        plugins = {
+          non_standalone = true,
+        },
+        storage = {
+        home = "~/.config/leetcode-rust",
+        cache = "~/.cache/leetcode/",
+        },
+    },
+}
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
